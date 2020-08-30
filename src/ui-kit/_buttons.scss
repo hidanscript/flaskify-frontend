@@ -1,8 +1,9 @@
 .flask-primary-btn {
   background-color: $white;
-  color: rgba($black, 0.7);
+  color: $dark-purple;
   outline: none;
   border: 2px solid $white;
+  font-weight: bold;
 }
 
 .flask-primary-btn:hover {
@@ -10,11 +11,44 @@
   border: 2px solid $white;
 }
 
+.flask-facebook-btn {
+  background-color: $facebook;
+  color: white;
+  outline: none;
+  border: 2px solid $facebook;
+}
+
+.flask-facebook-btn:hover {
+  background: none;
+  color: $facebook;
+  border: 2px solid $facebook;
+  i {
+    color: $facebook !important;
+  }
+}
+
+.flask-google-btn {
+  background-color: $google;
+  color: white;
+  outline: none;
+  border: 2px solid $google;
+}
+
+.flask-google-btn:hover {
+  background: none;
+  color: $google;
+  border: 2px solid $google;
+  i {
+    color: $google !important;
+  }
+}
+
 .flask-outline-btn {
   background: none;
   color: $white;
   outline: none;
   border: 2px solid $white;
+  font-weight: bold !important;
 }
 
 .flask-outline-btn:hover {

@@ -1,0 +1,22 @@
+.login-screen {
+  background-color: $dark-purple;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo-title {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .register-card {
+    min-width: 300px;
+  }
+  .separator {
+    border-bottom: 1px solid $black !important;
+    opacity: .3;
+    margin: 10px;
+  }
+}

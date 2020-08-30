@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
@@ -7,7 +8,7 @@ function Navigation() {
       <Container>
         <i className="icon-Flask text-dark-purple fas fa-flask"></i>
         <Navbar.Brand className="text-dark-purple" href="#">
-          Flaskify
+          Flaskitt
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
@@ -16,15 +17,19 @@ function Navigation() {
             <Nav.Link href="#features">Precios</Nav.Link>
             <Nav.Link href="#pricing">Contactanos</Nav.Link>
           </Nav>
-          <Button
-            variant="primary flask-outline-secondary-btn"
-            className="ml-4"
-          >
-            Iniciar sesión
-          </Button>
-          <Button variant="primary flask-secondary-btn" className="ml-2">
-            Registrarse
-          </Button>
+          <Link to="/login">
+            <Button
+              variant="primary flask-outline-secondary-btn"
+              className="ml-4"
+            >
+              Iniciar sesión
+            </Button>
+          </Link>
+          <Link to="/signup">
+            <Button variant="primary flask-secondary-btn" className="ml-2">
+              Registrarse
+            </Button>
+          </Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

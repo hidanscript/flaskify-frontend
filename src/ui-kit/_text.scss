@@ -5,3 +5,18 @@
 .text-dark-purple {
   color: $dark-purple !important;
 }
+
+.text-data-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .text-data {
+    font-size: 40px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .text-data-subtitle {
+    font-size: 14px;
+    max-width: 300px;
+  }
+}
