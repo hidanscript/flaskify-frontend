@@ -1,0 +1,40 @@
+.dashboard-screen {
+  .dashboard-sidebar {
+    height: 94vh;
+    background-color: $dark-purple;
+    padding: 0 !important;
+    ul {
+      width: 100%;
+      list-style: none;
+    }
+    .dashboard-sidebar__action {
+      width: 100%;
+      padding: 10px;
+      color: $white;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 150ms ease;
+    }
+    .dashboard-sidebar__action-active {
+      width: 100%;
+      padding: 10px;
+      color: $white;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 150ms ease;
+      background-color: $light-purple;
+    }
+    .dashboard-sidebar__action:hover {
+      background-color: $purple;
+    }
+    .dashboard-user-company {
+      padding: 10px;
+      border-bottom: 1px solid rgba($black, 0.3);
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
