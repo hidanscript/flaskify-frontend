@@ -1,0 +1,42 @@
+.landing-screen {
+  .bg-image {
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+    opacity: 0.05;
+    z-index: 1;
+  }
+  .landing-jumbotron {
+    height: 95vh;
+    display: flex;
+    background-color: $dark-purple;
+    flex-direction: column;
+    justify-content: center;
+
+    .landing-container {
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+
+      .text-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+    .landing-package {
+      width: 340px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-package {
+    display: none;
+  }
+  .text-container {
+    display: block;
+    text-align: center;
+    align-self: center;
+  }
+}
