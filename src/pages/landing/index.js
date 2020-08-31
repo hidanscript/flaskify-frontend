@@ -3,6 +3,7 @@ import Navigation from "../../components/navbar";
 import { Jumbotron, Button, Container } from "react-bootstrap";
 import Waves from "../../components/waves";
 import DataContainer from '../../components/data-container';
+import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
@@ -23,13 +24,17 @@ function Landing() {
               percentage="70" 
               description="Aumenta su productividad y sus ingresos hasta en un 150%" 
             />
-            <p className="text-white">
-              <Button variant="primary flask-primary-btn" size="lg">Empieza ahora</Button>
-            </p>
+            <Link to="/signup">
+              <p className="text-white mt-4">
+                <Button variant="primary flask-primary-btn" block size="lg">Empieza ahora</Button>
+              </p>
+            </Link>
           </div>
           <img
             className="landing-package"
+            alt="package"
             src={require("../../images/package.png")}
+            
           />
         </Container>
       </Jumbotron>

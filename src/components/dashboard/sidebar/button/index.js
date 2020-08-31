@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 function SidebarButton(props) {
   const location = useLocation();
-  console.log(location);
+  
   return (
     <div 
     className={ 

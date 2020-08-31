@@ -4,6 +4,7 @@ import Landing from "./pages/landing";
 import Register from './pages/register';
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
+import { ProtectedRoute } from './services/protected-route';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route exact path="/" component={Landing} />
           <Route path="/signup" component={Register} />
           <Route path="/login" component={Login} />
-          <Route path="/dashboard" component={Dashboard} />
+          <ProtectedRoute path="/dashboard" component={Dashboard} />
         </Switch>
       )}
     />

@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
 import { Card, Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Axios from 'axios';
+import { SERVER_URL } from '../../../lib/endpoints';
 
-function RegisterForm() {
+function RegisterForm(props) {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
 
   const registerUser = (event) => {
     event.preventDefault();
-    
+    Axios.post(SERVER_URL + '/user/signup', { name, password, email})
+      .then(response => {
+        props.history.push('dashboard');
+      })
+      .catch(err => {
+        console.error('err', err);
+      });
   }
 
   return (
