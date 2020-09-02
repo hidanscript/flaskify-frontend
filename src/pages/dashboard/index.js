@@ -2,6 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from '../../components/dashboard/navbar';
 import SidebarButton from '../../components/dashboard/sidebar/button';
+import ProductInfo from '../../components/dashboard/product-info';
+
+import {
+  PieChart, Pie, Legend, Tooltip,
+} from 'recharts';
 
 function Dashboard() {
   return (
@@ -19,35 +24,10 @@ function Dashboard() {
             <SidebarButton title="Settings" faIcon="fas fa-cog" />
           </Col>
           <Col className="dashboard-main-view" xs={10}>
-            <div className="product-info">
-              <div className="product-info-title-container">
-                <h4 className="text-white product-info__title">Productos entregados</h4>
-                <span className="text-white text-muted">últimos 30 dias</span>
-              </div>
-              <h3 className="text-white">0</h3>
-              <svg className="product-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#fff" fill-opacity="1" d="M0,32L60,74.7C120,117,240,203,360,229.3C480,256,600,224,720,192C840,160,960,128,1080,122.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-              </svg>
-            </div>
-            <div className="product-info product-warning">
-              <div className="product-info-title-container">
-                <h4 className="text-white product-info__title">Productos pendientes</h4>
-                <span className="text-white text-muted">últimos 30 dias</span>
-              </div>
-              <h3 className="text-white">0</h3>
-              <svg className="product-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#fff" fill-opacity="1" d="M0,32L60,74.7C120,117,240,203,360,229.3C480,256,600,224,720,192C840,160,960,128,1080,122.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-              </svg>
-            </div>
-            <div className="product-info product-danger">
-              <div className="product-info-title-container">
-                <h4 className="text-white product-info__title">Productos sin entregar</h4>
-                <span className="text-white text-muted">últimos 30 dias</span>
-              </div>
-              <h3 className="text-white">0</h3>
-              <svg className="product-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#fff" fill-opacity="1" d="M0,32L60,74.7C120,117,240,203,360,229.3C480,256,600,224,720,192C840,160,960,128,1080,122.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-              </svg>
+            <div className="dashboard-main-view-container">
+              <ProductInfo title="Productos entregados" sort="últimos 30 días" />
+              <ProductInfo title="Productos pendientes" variant="product-warning" sort="últimos 30 días" />
+              <ProductInfo title="Productos sin entregar" variant="product-danger" sort="últimos 30 días" />
             </div>
           </Col>
         </Row>

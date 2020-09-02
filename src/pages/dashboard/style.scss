@@ -2,6 +2,10 @@
   .dashboard-main-view {
     display: flex;
   }
+  .dashboard-main-view-container {
+    display: flex;
+    border: 1px solid $black;
+  }
   .dashboard-sidebar {
     height: 94vh;
     background-color: $dark-purple;
