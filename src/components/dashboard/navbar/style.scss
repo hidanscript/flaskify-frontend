@@ -4,3 +4,41 @@
 	-moz-box-shadow: 0 2px 1px rgba(0,0,0,.3);
 	box-shadow: 0 2px 1px rgba(0,0,0,.3);
 }
+
+.notification-icon {
+  opacity: .3;
+  align-self: center;
+  cursor: pointer;
+}
+
+.nav-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  .dropdown-menu {
+    min-width: 210px;
+  }
+  img {
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+  }
+  .arrow {
+    border: solid $white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+.nav-avatar:hover {
+  background-color: rgba($white, .5);
+}
