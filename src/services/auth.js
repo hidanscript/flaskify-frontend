@@ -10,6 +10,7 @@ class Auth {
   async isAuthenticated() {
     await Axios.get(SERVER_URL + '/user')
       .then(response => {
+        console.log(response);
         this.authenticated = true;
       })
       .catch(err => console.log(err, err));

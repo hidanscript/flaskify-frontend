@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
+    <>
     <div className="landing-screen">
       <Navigation />
       <Jumbotron fluid className="landing-jumbotron">
@@ -40,6 +41,11 @@ function Landing() {
       </Jumbotron>
       <Waves />
     </div>
+    <Container style={{ marginTop: 150 }}>
+    <h2 className="text-muted text-center">Organiza y gestiona tus productos, envíos y cotizaciones, en un solo lugar</h2>
+    <p className="text-muted text-center">Mantén a tus clientes siempre satisfechos</p>
+  </Container>
+  </>
   );
 }
 
