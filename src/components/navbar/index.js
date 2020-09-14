@@ -12,7 +12,7 @@ function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Nav className="ml-auto">
+          <Nav className="mr-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#features">Precios</Nav.Link>
             <Nav.Link href="#pricing">Contactanos</Nav.Link>

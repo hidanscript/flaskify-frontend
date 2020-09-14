@@ -9,7 +9,7 @@
   .landing-jumbotron {
     height: 92vh;
     display: flex;
-    background-color: $dark-purple;
+    background-image: url("../../images/bg.jpg");
     flex-direction: column;
     justify-content: center;
 
@@ -35,8 +35,8 @@
       }
     }
     .landing-package {
-      width: 340px;
-      height: 340px;
+      width: 350px;
+      height: 350px;
     }
   }
 }
